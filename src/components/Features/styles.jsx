@@ -32,6 +32,7 @@ export const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
+  margin-bottom: 1rem;
   @media (max-width:700px) {
     width: 90%;
     font-size: 2.5rem;
@@ -39,7 +40,7 @@ export const Title = styled.h1`
 `
 
 export const Description = styled.p`
-  width: 60vw;
+  width: 50vw;
   text-align: center;
   margin-bottom: 3rem;
   @media (max-width:700px) {

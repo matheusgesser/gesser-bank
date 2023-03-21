@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Header, Hero, BrandSection, Features } from "./components"
+import { Header, Hero, BrandSection, Features, Product } from "./components"
 
 export default function App() {
   return (
@@ -10,6 +10,7 @@ export default function App() {
         <Hero />
         <BrandSection />
         <Features />
+        <Product />
       </Main>
     </>
   )
