@@ -32,7 +32,7 @@ export const Description = styled.p`
 `
 
 export const VisualContent = styled.section`
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   position: relative;
   @media (max-width:700px) {
     padding: 2rem 0;
@@ -41,6 +41,7 @@ export const VisualContent = styled.section`
 
 export const MainPicture = styled.img`
   width: 80vw;
+  max-width: 60rem;
   height: 35rem;
   border-radius: 30px;
   object-fit: cover;

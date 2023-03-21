@@ -13,7 +13,7 @@ export default function Hero() {
     <>
       <TextContent>
         <Title>The most transparent & secure banking ever</Title>
-        <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis tempore temporibus quia illum cum deleniti rerum corrupti iste, ullam voluptate, optio non molestiae.</Description>
+        <Description>Here customers have access to detailed information about their financial activities, including account balances, transactions, and fees. Our robust security measures include multi-factor authentication, encryption, and regular monitoring to ensure that our customers' data is always protected.</Description>
       </TextContent>
       <VisualContent>
         <MainPicture src={MainPic}></MainPicture>
