@@ -66,6 +66,14 @@ export const Logo = styled.aside`
     font-size: 1.5rem;
     font-weight: 800;
   }
+  @media (max-width:400px) {
+    & img {
+      width: 1rem;
+    }
+    & h1 {
+      font-size: .8rem;
+    }
+  }
 `
 
 export const NavBar = styled.nav`
