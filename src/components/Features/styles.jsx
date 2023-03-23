@@ -45,6 +45,8 @@ export const Description = styled.p`
   margin-bottom: 3rem;
   @media (max-width:700px) {
     width: 90%;
+    word-break: break-all;
+    text-overflow: ellipsis;
   }
 `
 

@@ -125,6 +125,7 @@ export const TextContent = styled.section`
   @media (max-width:1200px) {
     & section {
       justify-content: center;
+      gap: 0;
     }
   }
 `

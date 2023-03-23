@@ -17,6 +17,8 @@ export const Title = styled.h1`
   width: 60%;
   font-size: 3rem;
   font-weight: 800;
+  text-overflow: ellipsis;
+  word-break: break-all;
   @media (max-width:700px) {
     width: 90%;
     font-size: 2.5rem;

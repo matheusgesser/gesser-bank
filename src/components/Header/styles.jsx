@@ -68,10 +68,10 @@ export const Logo = styled.aside`
   }
   @media (max-width:400px) {
     & img {
-      width: 1rem;
+      width: 2rem;
     }
     & h1 {
-      font-size: .8rem;
+      display: none;
     }
   }
 `

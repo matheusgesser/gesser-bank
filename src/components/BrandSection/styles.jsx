@@ -17,8 +17,11 @@ export const Wrapper = styled.section`
     align-items: center;
     justify-content: space-evenly;
     font-size: 1.5rem;
-    @media (max-width:800px) {
+  }
+  @media (max-width:400px) {
+    & section {
       width: 90%;
+      gap: 0;
     }
   }
 `
