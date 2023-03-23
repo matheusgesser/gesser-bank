@@ -6,7 +6,7 @@ import CardThreePic from '../../assets/card3.jpg'
 
 export default function StartSteps() {
   return (
-    <Wrapper>
+    <Wrapper id="start">
       <Title>It have never been easier to
         manage your finances</Title>
       <Description>Lorem ipsum dolor sit amet consectetur adipiscing elit ut luctus aliquet ut nisl tortor nam lacus sit in lorem elementum scelerisque.</Description>

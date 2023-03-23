@@ -10,7 +10,7 @@ import PersonTwoPic from '../../assets/person1.jpg'
 export default function Insight() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id='insight'>
         <TextContent>
           <span>Insight</span>
           <h2>Our company have

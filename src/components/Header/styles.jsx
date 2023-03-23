@@ -12,6 +12,7 @@ export const MenuBackground = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  user-select: none;
   & ul {
       position: absolute;
       top: 25vh;
@@ -22,13 +23,10 @@ export const MenuBackground = styled.div`
   & ul li {
     font-size: 2.5rem;
     color: #fff;
+    font-weight: 800;
     text-transform: uppercase;
     padding: 1rem 2rem;
-  }
-  & ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 800;
+    cursor: pointer;
   }
 `
 
@@ -42,6 +40,7 @@ export const Wrapper = styled.header`
   background: #F2F8FFEE;
   z-index: 10;
   transition: all 0.5s ease-in-out;
+  user-select: none;
   & svg {
     font-size: 2rem;
     box-sizing: content-box;
@@ -60,6 +59,8 @@ export const Logo = styled.aside`
   display: flex;
   align-items: end;
   gap: 2px;
+  cursor: pointer;
+  padding: 1.5rem;
   & img {
     width: 2rem;
   }

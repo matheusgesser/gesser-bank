@@ -6,7 +6,7 @@ import { SiIbm, SiAirbnb } from 'react-icons/si'
 
 export default function BrandSection() {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <h4>Trusted by</h4>
       <section>
         <BsYoutube color="#FF0000" />

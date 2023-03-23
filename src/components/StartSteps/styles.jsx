@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 4rem 0;
+  padding: 6rem 0;
   & > section {
     width: 80%;
     display: flex;

@@ -7,7 +7,7 @@ import CardThreePic from '../../assets/card3.png'
 
 export default function Blog() {
   return (
-    <Wrapper>
+    <Wrapper id="blog">
       <Title>Take a look at our
         articles & resources</Title>
       <section>

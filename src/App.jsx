@@ -1,18 +1,19 @@
-import React from "react"
+import React, { createRef } from "react"
 import styled from "styled-components"
 import { Header, Hero, BrandSection, Features, Product, StartSteps, Insight, Blog, Footer } from "./components"
 
 export default function App() {
+  const insight = createRef(null)
   return (
     <>
-      <Header />
+      <Header insight={insight} />
       <Main>
         <Hero />
         <BrandSection />
         <Features />
         <Product />
         <StartSteps />
-        <Insight />
+        <Insight ref={insight} />
         <Blog />
       </Main>
       <Footer />

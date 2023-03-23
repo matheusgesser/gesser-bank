@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 4rem 0;
+  padding: 6rem 0;
   & > section {
     width: 80%;
     display: flex;
@@ -39,6 +39,8 @@ export const Card = styled.section`
   flex-direction: column;
   margin-bottom: 2rem;
   filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  transition: all 0.3s;
   & section {
     display: flex;
     flex-direction: column;
@@ -60,6 +62,9 @@ export const Card = styled.section`
   & p {
     width: 90%;
     font-size: 1.2rem;
+  }
+  &:hover {
+    transform: translateY(-8px);
   }
   @media (max-width:1200px) {
     width: 20rem;

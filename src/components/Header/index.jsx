@@ -4,14 +4,21 @@ import { useScrollDirection } from '../../hooks'
 import { MenuBackground, Wrapper, Logo, NavBar } from './styles'
 import WingIcon from '../../assets/wing-logo.svg'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoClose } from 'react-icons/io5'
 
-export default function Header() {
+export default function Header(props) {
   const [showMenu, setShowMenu] = useState(false)
   const scrollUp = useScrollDirection() == 'up';
   console.log(scrollUp)
 
-  function toggleMenu() {
-    setShowMenu(prev => !prev)
+  function scrollToElement(event) {
+    setShowMenu(false)
+    let element = event.target.textContent.toLowerCase()
+    if (element) {
+      document.getElementById(element).scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
   }
 
   return (
@@ -21,30 +28,32 @@ export default function Header() {
           showMenu ? 'inline' : 'none'
       }} >
         <ul>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Insight</a></li>
-          <li><a href='#'>Blog</a></li>
-          <li><a href='#'>Contact</a></li>
-        </ul>
-      </MenuBackground>
+          <li onClick={scrollToElement} >About</li>
+          <li onClick={scrollToElement} >Start</li >
+          <li onClick={scrollToElement} >Insight</li>
+          <li onClick={scrollToElement} >Blog</li>
+        </ul >
+      </MenuBackground >
 
       <Wrapper style={{
         transform:
           scrollUp ? 'translateY(0)' : 'translateY(-6rem)'
       }} >
-        <Logo>
+        <Logo onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
           <img src={WingIcon} />
           <h1>Gesser Bank</h1>
         </Logo>
         <NavBar>
           <ul>
-            <li>About</li>
-            <li>Insight</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li onClick={scrollToElement}>About</li>
+            <li onClick={scrollToElement}>Start</li>
+            <li onClick={scrollToElement}>Insight</li>
+            <li onClick={scrollToElement}>Blog</li>
           </ul>
         </NavBar>
-        <GiHamburgerMenu onClick={toggleMenu} />
+        {showMenu ? <IoClose onClick={() => setShowMenu(false)} style={{ fontSize: '2.5rem' }} />
+          : <GiHamburgerMenu onClick={() => setShowMenu(true)} />}
       </Wrapper>
     </>
   )

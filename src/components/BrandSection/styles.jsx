@@ -7,6 +7,7 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
   gap: .6rem;
+  padding: 4rem 0;
   & h4 {
     font-size: .9rem;
     opacity: 0.9;
