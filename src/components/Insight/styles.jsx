@@ -14,10 +14,10 @@ export const Wrapper = styled.section`
 `
 
 export const VisualContent = styled.section`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50rem;
   position: relative;
   @media (max-width:700px) {
     width: 100%;
@@ -59,7 +59,7 @@ export const Comment = styled.aside`
   & p {
     opacity: 0.8;
   }
-  @media (max-width:700px) {
+  @media (max-width:1400px) {
     display: none;
   }
 `
@@ -84,6 +84,7 @@ export const TextContent = styled.section`
   }
   & > p {
     margin-bottom: 4rem;
+    text-overflow: ellipsis;
     word-break: break-all;
   }
   & > section {
@@ -105,6 +106,8 @@ export const TextContent = styled.section`
   & h3 {
     font-weight: 800;
     font-size: 1.3rem;
+    text-overflow: ellipsis;
+    word-break: break-all;
   }
   & > section:first-of-type section:first-child h3::after {
     content: '%';
@@ -126,6 +129,9 @@ export const TextContent = styled.section`
     & section {
       justify-content: center;
       gap: 0;
+    }
+    & h2 {
+      word-break: break-all;
     }
   }
 `

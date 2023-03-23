@@ -41,6 +41,7 @@ export const Wrapper = styled.header`
   position: fixed;
   background: #F2F8FFEE;
   z-index: 10;
+  transition: all 0.5s ease-in-out;
   & svg {
     font-size: 2rem;
     box-sizing: content-box;

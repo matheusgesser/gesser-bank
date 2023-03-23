@@ -97,6 +97,7 @@ export const TextContent = styled.section`
   }
   & > p {
     margin-bottom: 4rem;
+    text-overflow: ellipsis;
     word-break: break-all;
   }
   & > section {
@@ -116,5 +117,10 @@ export const TextContent = styled.section`
   & h3 {
     font-weight: 800;
     font-size: 1.3rem;
+  }
+  @media (max-width:700px) {
+    & h2 {
+      word-break: break-all;
+    }
   }
 `

@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
+import { useScrollDirection } from '../../hooks'
+
 import { MenuBackground, Wrapper, Logo, NavBar } from './styles'
 import WingIcon from '../../assets/wing-logo.svg'
-
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false)
+  const scrollUp = useScrollDirection() == 'up';
+  console.log(scrollUp)
 
   function toggleMenu() {
     setShowMenu(prev => !prev)
@@ -25,7 +28,10 @@ export default function Header() {
         </ul>
       </MenuBackground>
 
-      <Wrapper>
+      <Wrapper style={{
+        transform:
+          scrollUp ? 'translateY(0)' : 'translateY(-6rem)'
+      }} >
         <Logo>
           <img src={WingIcon} />
           <h1>Gesser Bank</h1>

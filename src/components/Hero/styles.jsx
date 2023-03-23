@@ -18,8 +18,8 @@ export const Title = styled.h1`
   font-size: 3rem;
   font-weight: 800;
   text-overflow: ellipsis;
-  word-break: break-all;
   @media (max-width:700px) {
+    word-break: break-all;
     width: 90%;
     font-size: 2.5rem;
   }
@@ -56,7 +56,7 @@ export const Card = styled.aside`
   background: linear-gradient(140deg, #fff, #eee);
   position: absolute;
   top: 20px;
-  right: -50px;
+  right: -20px;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
