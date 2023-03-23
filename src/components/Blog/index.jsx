@@ -12,7 +12,7 @@ export default function Blog() {
         articles & resources</Title>
       <section>
         <Card>
-          <img src={CardOnePic} />
+          <img src={CardOnePic} loading='lazy' />
           <section>
             <strong>May 3, 2023</strong>
             <h4>Business</h4>
@@ -20,7 +20,7 @@ export default function Blog() {
           </section>
         </Card>
         <Card>
-          <img src={CardTwoPic} />
+          <img src={CardTwoPic} loading='lazy' />
           <section>
             <strong>Jun 16, 2022</strong>
             <h4>Management</h4>
@@ -29,7 +29,7 @@ export default function Blog() {
           </section>
         </Card>
         <Card>
-          <img src={CardThreePic} />
+          <img src={CardThreePic} loading='lazy' />
           <section>
             <strong>Dec 24, 2022</strong>
             <h4>Finances</h4>

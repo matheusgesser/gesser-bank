@@ -37,16 +37,16 @@ export default function Insight() {
           </section>
         </TextContent>
         <VisualContent>
-          <BackImage src={InsightPic} />
+          <BackImage src={InsightPic} loading='lazy' />
           <Comment style={{ left: '-12vw', top: '40px' }}>
-            <img src={PersonOnePic} />
+            <img src={PersonOnePic} loading='lazy' />
             <section>
               <strong>"Extremely secure"</strong>
               <p>Andy Smith - Investor & Trader</p>
             </section>
           </Comment>
           <Comment style={{ left: '-8vw', bottom: '40px' }}>
-            <img src={PersonTwoPic} />
+            <img src={PersonTwoPic} loading='lazy' />
             <section>
               <strong>"Gesser Bank is the best"</strong>
               <p>Sophie Moore - Head of Finance</p>

@@ -12,17 +12,17 @@ export default function StartSteps() {
       <Description>Lorem ipsum dolor sit amet consectetur adipiscing elit ut luctus aliquet ut nisl tortor nam lacus sit in lorem elementum scelerisque.</Description>
       <section>
         <Card>
-          <img src={CardOnePic} />
+          <img src={CardOnePic} loading='lazy' />
           <strong>1. Download our app</strong>
           <p>Suspendisse in amet volutpat et cras sit velit magna risus posuere volutpat laoreet dictum lectus tellus massa nec vel proin</p>
         </Card>
         <Card>
-          <img src={CardTwoPic} />
+          <img src={CardTwoPic} loading='lazy' />
           <strong>2. Create an account</strong>
           <p>Suspendisse in amet volutpat et cras sit velit magna risus posuere volutpat laoreet dictum lectus tellus massa nec vel proin</p>
         </Card>
         <Card>
-          <img src={CardThreePic} />
+          <img src={CardThreePic} loading='lazy' />
           <strong>3. Start Investing</strong>
           <p>Suspendisse in amet volutpat et cras sit velit magna risus posuere volutpat laoreet dictum lectus tellus massa nec vel proin</p>
         </Card>
