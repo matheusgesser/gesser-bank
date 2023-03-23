@@ -65,6 +65,7 @@ export const Card = styled.section`
   }
   &:hover {
     transform: translateY(-8px);
+    filter: drop-shadow(0px 14px 5px rgba(0, 0, 0, 0.1));
   }
   @media (max-width:1200px) {
     width: 20rem;

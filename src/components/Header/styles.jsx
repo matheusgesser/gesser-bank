@@ -26,7 +26,38 @@ export const MenuBackground = styled.div`
     font-weight: 800;
     text-transform: uppercase;
     padding: 1rem 2rem;
+    position: relative;
     cursor: pointer;
+    &::before {
+      content: '';
+      width: 0;
+      height: 5px;
+      position: absolute;
+      bottom: 0.5rem;
+      left: 2rem;
+      background: #fff;
+      transition: all 300ms;
+    }
+  }
+  & ul li:nth-child(1) {
+    &:hover::before {
+      width: 62%;
+    }
+  }
+  & ul li:nth-child(2) {
+    &:hover::before {
+      width: 56%;
+    }
+  }
+  & ul li:nth-child(3) {
+    &:hover::before {
+      width: 71%;
+    }
+  }
+  & ul li:nth-child(4) {
+    &:hover::before {
+      width: 48%;
+    }
   }
 `
 
@@ -41,6 +72,17 @@ export const Wrapper = styled.header`
   z-index: 10;
   transition: all 0.5s ease-in-out;
   user-select: none;
+  box-shadow: 0 3px 10px #00000008;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(4px);
+  }
   & svg {
     font-size: 2rem;
     box-sizing: content-box;
@@ -61,7 +103,11 @@ export const Logo = styled.aside`
   gap: 2px;
   cursor: pointer;
   padding: 1.5rem;
-  & img {
+  transition: all 300ms;
+  &:hover {
+    transform: scale(0.9);
+  }
+    & img {
     width: 2rem;
   }
   & h1 {
@@ -88,6 +134,11 @@ export const NavBar = styled.nav`
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 600;
+    position: relative;
+    transition: all 200ms;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   @media (max-width:1200px) {
     & ul {

@@ -21,6 +21,10 @@ export const Wrapper = styled.footer`
       box-sizing: content-box;
       padding: 0.5rem;
       cursor: pointer;
+      transition: all 100ms;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
   @media (max-width:700px) {

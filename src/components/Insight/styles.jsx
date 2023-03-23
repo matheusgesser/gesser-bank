@@ -28,6 +28,10 @@ export const VisualContent = styled.section`
 export const BackImage = styled.img`
   width: 80%;
   filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.3));
+  transition: all 800ms;
+    &:hover {
+      transform: rotate(3deg);
+    }
   @media (max-width:700px) {
     width: 100%;
     padding: 0;
@@ -44,7 +48,10 @@ export const Comment = styled.aside`
   padding-right: 1.5rem;
   border-radius: 166px;
   filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.1));
-
+  transition: all 500ms;
+  &:hover {
+    margin: 1rem;
+  }
   & img {
     width: 3rem;
     border-radius: 50%;
@@ -76,6 +83,10 @@ export const TextContent = styled.section`
     display: inline-block;
     width: fit-content;
     margin-bottom: 2rem;
+    transition: all 300ms;
+    &:hover {
+      letter-spacing: 3px;
+    }
   }
   & h2 {
     font-size: 3rem;
@@ -84,15 +95,13 @@ export const TextContent = styled.section`
   }
   & > p {
     margin-bottom: 4rem;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
   & > section {
     display: inline-flex;
     width: 100%;
     align-items: center;
     gap: 4rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     align-items: center;
   }
   & > section svg {
@@ -101,13 +110,15 @@ export const TextContent = styled.section`
   & > section > section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
+    transition: all 300ms;
+    padding: 0.5rem 1rem;
+    &:hover {
+      background: #00000010;
+    }
   }
   & h3 {
     font-weight: 800;
-    font-size: 1.3rem;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
   & > section:first-of-type section:first-child h3::after {
     content: '%';
@@ -131,7 +142,14 @@ export const TextContent = styled.section`
       gap: 0;
     }
     & h2 {
-      word-break: break-all;
+      text-align: center;
+    }
+  }
+  @media (max-width:400px) {
+    & > p,
+    & h3,
+    & h2 {
+    word-break: break-all;
     }
   }
 `

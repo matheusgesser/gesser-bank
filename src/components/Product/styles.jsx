@@ -25,6 +25,10 @@ export const VisualContent = styled.section`
 `
 export const BackImage = styled.img`
   width: 100%;
+  transition: all 300ms;
+  &:hover {
+    transform: translateY(-8px);
+  }
 `
 export const Card = styled.section`
   position: absolute;
@@ -37,6 +41,10 @@ export const Card = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  transition: all 300ms;
+    &:hover {
+      background: #FFFFFFDD;
+    }
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0,1));
   & > section {
     display: flex;
@@ -49,6 +57,10 @@ export const Card = styled.section`
     border-radius: 50%;
     color: #fff;
     font-size: 1.5rem;
+    transition: all 300ms;
+  }
+  & svg:hover {
+    transform: scale(1.15);
   }
   & section:last-of-type > svg {
     color: #000;
@@ -89,6 +101,10 @@ export const TextContent = styled.section`
     display: inline-block;
     width: fit-content;
     margin-bottom: 2rem;
+    transition: all 300ms;
+    &:hover {
+      letter-spacing: 2px;
+    }
   }
   & h2 {
     font-size: 3rem;
@@ -97,8 +113,6 @@ export const TextContent = styled.section`
   }
   & > p {
     margin-bottom: 4rem;
-    text-overflow: ellipsis;
-    word-break: break-all;
   }
   & > section {
     display: flex;
@@ -108,6 +122,10 @@ export const TextContent = styled.section`
   }
   & > section svg {
     font-size: 2.5rem;
+    transition: all 300ms;
+    &:hover {
+      transform: scale(1.2) rotate(10deg);
+    }
   }
   & > section > section {
     display: flex;
@@ -118,8 +136,9 @@ export const TextContent = styled.section`
     font-weight: 800;
     font-size: 1.3rem;
   }
-  @media (max-width:700px) {
-    & h2 {
+  @media (max-width:400px) {
+    & h2,
+    & p {
       word-break: break-all;
     }
   }

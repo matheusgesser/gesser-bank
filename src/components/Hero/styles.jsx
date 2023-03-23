@@ -17,8 +17,7 @@ export const Title = styled.h1`
   width: 60%;
   font-size: 3rem;
   font-weight: 800;
-  text-overflow: ellipsis;
-  @media (max-width:700px) {
+  @media (max-width:400px) {
     word-break: break-all;
     width: 90%;
     font-size: 2.5rem;
@@ -42,12 +41,17 @@ export const VisualContent = styled.section`
 `
 
 export const MainPicture = styled.img`
-  width: 80vw;
+  width: 90vw;
   max-width: 60rem;
   height: 35rem;
   border-radius: 30px;
   object-fit: cover;
   filter: drop-shadow(0px 7px 8px rgba(0, 0, 0, 0.3));
+  object-position: center;
+  transition: all 2s ease-in-out;
+  &:hover {
+    object-position: bottom;
+  }
 `
 
 export const Card = styled.aside`
@@ -62,6 +66,7 @@ export const Card = styled.aside`
   padding: 1.5rem;
   border-radius: 20px;
   filter: drop-shadow(0px 7px 8px rgba(0, 0, 0, 0.1));
+  transition: all 2s;
   & h4 {
     font-size: 0.8rem;
     color: #595959;
@@ -91,6 +96,11 @@ export const Card = styled.aside`
   & button svg {
     font-size: 1.3rem;
   }
+  &:hover {
+    transform: scale(1.2);
+    top: 80px;
+    right: 40px;
+  }
   @media (max-width:700px) {
     display: none;
   }
@@ -106,6 +116,7 @@ export const Comment = styled.aside`
   padding-right: 1.5rem;
   border-radius: 166px;
   filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.1));
+  transition: all 1s;
 
   & img {
     width: 3rem;
@@ -121,9 +132,14 @@ export const Comment = styled.aside`
   & p {
     opacity: 0.8;
   }
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.3));
+  }
   @media (max-width:700px) {
+    margin: -4rem 2rem;
     & img {
-      width: 2.5rem;
+      width: 3rem;
     }
   }
 `

@@ -51,6 +51,7 @@ export const Card = styled.section`
   text-align: center;
   gap: 1rem;
   & img {
+    transition: all .3s;
     width: 100%;
     margin-bottom: 2rem;
     border-radius: 16px;
@@ -63,6 +64,9 @@ export const Card = styled.section`
     width: 90%;
     text-align: center;
     font-size: 1.2rem;
+  }
+  &:hover img {
+    transform: scale(1.05) rotate(1deg);
   }
   @media (max-width:1200px) {
     width: 20rem;

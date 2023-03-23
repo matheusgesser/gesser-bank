@@ -8,8 +8,7 @@ import { IoClose } from 'react-icons/io5'
 
 export default function Header(props) {
   const [showMenu, setShowMenu] = useState(false)
-  const scrollUp = useScrollDirection() == 'up';
-  console.log(scrollUp)
+  const scrollUp = useScrollDirection() == 'up'
 
   function scrollToElement(event) {
     setShowMenu(false)
@@ -23,7 +22,7 @@ export default function Header(props) {
 
   return (
     <>
-      <MenuBackground style={{
+      <MenuBackground id='mobile-menu' style={{
         display:
           showMenu ? 'inline' : 'none'
       }} >
@@ -36,7 +35,7 @@ export default function Header(props) {
       </MenuBackground >
 
       <Wrapper style={{
-        transform:
+        transform: showMenu ? 'translateY(0)' :
           scrollUp ? 'translateY(0)' : 'translateY(-6rem)'
       }} >
         <Logo onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

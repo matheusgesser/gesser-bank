@@ -3,17 +3,16 @@ import styled from "styled-components"
 import { Header, Hero, BrandSection, Features, Product, StartSteps, Insight, Blog, Footer } from "./components"
 
 export default function App() {
-  const insight = createRef(null)
   return (
     <>
-      <Header insight={insight} />
+      <Header />
       <Main>
         <Hero />
         <BrandSection />
         <Features />
         <Product />
         <StartSteps />
-        <Insight ref={insight} />
+        <Insight />
         <Blog />
       </Main>
       <Footer />
