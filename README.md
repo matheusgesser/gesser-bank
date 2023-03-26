@@ -9,7 +9,7 @@
 
 > Bank landing page, built from *Raftaar Rik Polash* design.
 
-**Try it: <a href="#" target='_blank'>Coming soon</a> (Hex)**
+**Try it: <a href="#" target='_blank'>Coming soon</a>**
 
 ## 💻 **Technologies**
 
