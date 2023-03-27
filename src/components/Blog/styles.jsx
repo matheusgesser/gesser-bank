@@ -31,6 +31,11 @@ export const Title = styled.h1`
     width: 90%;
     font-size: 2.5rem;
   }
+  @media (max-width:400px) {
+    word-break: break-all;
+    width: 90%;
+    font-size: 2.5rem;
+  }
 `
 
 export const Card = styled.section`

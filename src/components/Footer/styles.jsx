@@ -5,17 +5,46 @@ export const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   background: #000;
   color: #fff;
-  & > section:last-of-type {
+  & > section {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    margin: 2rem 0;
+    & > section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+    & > section:last-of-type {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      & > section {
+        gap: 2rem;
+        & h4 {
+          margin-bottom: 1rem;
+        }
+        & ul {
+          padding: 0.5rem 1rem;
+        }
+        & li {
+          padding: 0.3rem 0;
+          cursor: pointer;
+          transition: all 300ms;
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
   }
   & aside {
     display: flex;
+    justify-content: center;
     & svg {
       font-size: 1.3rem;
       box-sizing: content-box;
@@ -27,11 +56,54 @@ export const Wrapper = styled.footer`
       }
     }
   }
-  @media (max-width:700px) {
-    & > section:last-of-type {
-      flex-direction: column-reverse;
-      padding: 1rem;
+  @media (max-width:1000px) {
+    & > section {
+      display: flex;
+      flex-direction: column;
       gap: 2rem;
+      & > section:last-of-type {
+        justify-content: center;
+        @media (max-width:600px) {
+          flex-direction: column;
+        }
+      }
+    }
+    & > section:last-of-type {
+      text-align: center;
+    }
+  }
+
+  @media (max-width:400px) {
+    & aside {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+`
+
+export const Logo = styled.aside`
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 300ms;
+  &:hover {
+    transform: scale(0.9);
+  }
+    & img {
+    width: 2rem;
+  }
+  & h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  @media (max-width:400px) {
+    & img {
+      width: 2rem;
+    }
+    & h1 {
+      display: none;
     }
   }
 `

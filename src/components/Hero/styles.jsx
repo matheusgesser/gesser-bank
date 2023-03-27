@@ -112,6 +112,7 @@ export const Comment = styled.aside`
   align-items: center;
   position: absolute;
   background: #fff;
+  margin: 2rem;
   padding: 0.5rem;
   padding-right: 1.5rem;
   border-radius: 166px;
