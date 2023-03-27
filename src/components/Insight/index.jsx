@@ -38,14 +38,14 @@ export default function Insight() {
         </TextContent>
         <VisualContent>
           <BackImage src={InsightPic} loading='lazy' />
-          <Comment style={{ left: '-12vw', top: '40px' }}>
+          <Comment style={{ left: '2vw', top: '40px' }}>
             <img src={PersonOnePic} loading='lazy' />
             <section>
               <strong>"Extremely secure"</strong>
               <p>Andy Smith - Investor & Trader</p>
             </section>
           </Comment>
-          <Comment style={{ left: '-8vw', bottom: '40px' }}>
+          <Comment style={{ left: '6vw', bottom: '40px' }}>
             <img src={PersonTwoPic} loading='lazy' />
             <section>
               <strong>"Gesser Bank is the best"</strong>

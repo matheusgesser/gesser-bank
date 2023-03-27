@@ -26,14 +26,16 @@ export const VisualContent = styled.section`
 `
 
 export const BackImage = styled.img`
-  width: 80%;
+  width: 50%;
   filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.3));
   transition: all 800ms;
+  margin-left: 14rem;
     &:hover {
       transform: rotate(3deg);
     }
-  @media (max-width:700px) {
-    width: 100%;
+  @media (max-width:1200px) {
+    width: 60%;
+    margin-left: 0;
     padding: 0;
   }
 `
@@ -66,7 +68,7 @@ export const Comment = styled.aside`
   & p {
     opacity: 0.8;
   }
-  @media (max-width:1400px) {
+  @media (max-width:1300px) {
     display: none;
   }
 `
