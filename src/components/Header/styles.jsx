@@ -137,7 +137,7 @@ export const NavBar = styled.nav`
     position: relative;
     transition: all 200ms;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(0.85);
     }
   }
   @media (max-width:1200px) {
