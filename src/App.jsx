@@ -1,4 +1,4 @@
-import React, { createRef } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Header, Hero, BrandSection, Features, Product, StartSteps, Insight, Blog, Footer } from "./components"
 
