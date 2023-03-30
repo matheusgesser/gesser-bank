@@ -80,7 +80,7 @@ export const Wrapper = styled.footer`
     }
   }
 
-  @media (max-width:400px) {
+  @media (max-width:250px) {
     & aside {
       flex-direction: column;
       align-items: center;
