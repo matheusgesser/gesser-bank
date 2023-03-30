@@ -45,7 +45,7 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#features',
       start: 'top center',
-      end: 'center top',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     y: 100,
@@ -57,7 +57,7 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#product',
       start: 'top center',
-      end: 'center top',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     translateZ: -4,

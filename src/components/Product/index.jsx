@@ -13,7 +13,7 @@ export default function Product() {
     <>
       <Wrapper id='product'>
         <VisualContent>
-          <BackImage src={ProductPic} loading='lazy' />
+          <BackImage src={ProductPic} />
           <Card>
             <section>
               <FaFacebookF style={{ background: '#4267B2' }} />

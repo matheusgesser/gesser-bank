@@ -39,14 +39,14 @@ export default function Insight() {
         <VisualContent>
           <BackImage src={InsightPic} />
           <Comment style={{ left: '-6vw', top: '40px' }}>
-            <img src={PersonOnePic} loading='lazy' />
+            <img src={PersonOnePic} />
             <section>
               <strong>"Extremely secure"</strong>
               <p>Andy Smith - Investor & Trader</p>
             </section>
           </Comment>
           <Comment style={{ left: '-12vw', bottom: '40px' }}>
-            <img src={PersonTwoPic} loading='lazy' />
+            <img src={PersonTwoPic} />
             <section>
               <strong>"Gesser Bank is the best"</strong>
               <p>Sophie Moore - Head of Finance</p>
