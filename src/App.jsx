@@ -41,7 +41,7 @@ export default function App() {
 
 const ScrollDownIcon = styled.aside`
   position: fixed;
-  bottom: 2rem;
+  bottom: 0;
   left: 50%;
   color: #111;
   pointer-events: none;
@@ -51,14 +51,14 @@ const ScrollDownIcon = styled.aside`
   & svg {
     font-size: 4rem;
     cursor: default;
-    animation: jump infinite ease-out 1s alternate-reverse;
+    animation: jump infinite ease-out .6s alternate-reverse;
   }
   @keyframes jump {
     from {
       transform: translate(-50%, 0);
     }
     to {
-      transform: translate(-50%, -30%);
+      transform: translate(-50%, -40%);
     }
   }
 `
