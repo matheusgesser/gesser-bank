@@ -69,7 +69,7 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#start',
       start: 'top center',
-      end: 'bottom top',
+      end: '+=300%',
       toggleActions: 'play reverse restart reverse',
     },
     scale: 0.8,
@@ -81,7 +81,7 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#insight',
       start: 'top center',
-      end: 'bottom top',
+      end: '+=200%',
       toggleActions: 'play reverse restart reverse',
     },
     opacity: 0,
@@ -92,7 +92,7 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#blog',
       start: 'top center',
-      end: 'bottom top',
+      end: '+=180%',
       toggleActions: 'play reverse restart reverse',
     },
     y: 20,
