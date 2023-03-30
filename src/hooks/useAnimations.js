@@ -81,8 +81,9 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#insight',
       start: 'top center',
-      end: 'bottom center',
+      end: '+=90%',
       toggleActions: 'play reverse restart reverse',
+      markers: true
     },
     y: 30,
     opacity: 0,
