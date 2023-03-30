@@ -8,11 +8,13 @@ export const Wrapper = styled.footer`
   padding: 1rem 4rem;
   background: #111;
   color: #fff;
+  z-index: 100;
   & > section {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin: 2rem 0;
+    z-index: 100;
     & > section {
       display: flex;
       flex-direction: column;
@@ -95,6 +97,7 @@ export const Logo = styled.aside`
   margin-bottom: 3rem;
   cursor: pointer;
   transition: all 300ms;
+  z-index: 100;
   &:hover {
     transform: scale(0.9);
   }

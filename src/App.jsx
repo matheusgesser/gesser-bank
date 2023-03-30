@@ -47,7 +47,7 @@ const ScrollDownIcon = styled.aside`
   pointer-events: none;
   user-select: none;
   cursor: default;
-  z-index: 999;
+  z-index: 5;
   & svg {
     font-size: 4rem;
     cursor: default;
