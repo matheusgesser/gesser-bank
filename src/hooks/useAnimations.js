@@ -69,7 +69,7 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#start',
       start: 'top center',
-      end: 'bottom center',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     scale: 0.8,
