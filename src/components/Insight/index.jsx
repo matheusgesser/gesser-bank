@@ -37,7 +37,7 @@ export default function Insight() {
           </section>
         </TextContent>
         <VisualContent>
-          <BackImage src={InsightPic} loading='lazy' />
+          <BackImage src={InsightPic} />
           <Comment style={{ left: '-6vw', top: '40px' }}>
             <img src={PersonOnePic} loading='lazy' />
             <section>

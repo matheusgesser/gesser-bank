@@ -81,11 +81,9 @@ export function useAnimations() {
     scrollTrigger: {
       trigger: '#insight',
       start: 'top center',
-      end: '+=90%',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
-      markers: true
     },
-    y: 30,
     opacity: 0,
     duration: .8
   })
@@ -93,8 +91,8 @@ export function useAnimations() {
   gsap.from('#blog', {
     scrollTrigger: {
       trigger: '#blog',
-      start: '-=110%',
-      end: '+=500%',
+      start: 'top center',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     y: 20,
@@ -105,8 +103,8 @@ export function useAnimations() {
   gsap.to('#cs', {
     scrollTrigger: {
       trigger: '#insight',
-      start: '-=70%',
-      end: '+=100%',
+      start: 'top center',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     innerText: 99,
@@ -120,8 +118,8 @@ export function useAnimations() {
   gsap.to('#nupw', {
     scrollTrigger: {
       trigger: '#insight',
-      start: '-=70%',
-      end: '+=100%',
+      start: 'top center',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     innerText: 100,
@@ -135,8 +133,8 @@ export function useAnimations() {
   gsap.to('#mau', {
     scrollTrigger: {
       trigger: '#insight',
-      start: '-=70%',
-      end: '+=100%',
+      start: 'top center',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     innerText: 205,
@@ -150,8 +148,8 @@ export function useAnimations() {
   gsap.to('#gyoy', {
     scrollTrigger: {
       trigger: '#insight',
-      start: '-=70%',
-      end: '+=100%',
+      start: 'top center',
+      end: 'bottom top',
       toggleActions: 'play reverse restart reverse',
     },
     innerText: 55,
