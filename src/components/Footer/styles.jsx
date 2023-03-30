@@ -6,7 +6,7 @@ export const Wrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   padding: 1rem 4rem;
-  background: #000;
+  background: #111;
   color: #fff;
   & > section {
     width: 100%;
@@ -40,6 +40,13 @@ export const Wrapper = styled.footer`
           }
         }
       }
+    }
+  }
+  & > section:last-of-type {
+    font-size: 0.8rem;
+    & a {
+      color: #fff;
+      font-size: 1rem;
     }
   }
   & aside {

@@ -8,7 +8,7 @@ import { FiMonitor } from 'react-icons/fi'
 
 export default function Features() {
   return (
-    <Wrapper>
+    <Wrapper id="features">
       <Title>The features that make our bank unique</Title>
       <Description>We strive to provide clear and concise information to our customers, so they can make informed decisions about their finances. Our online banking platform is user-friendly and easy to navigate, making it simple for customers to access their financial information from anywhere at any time.</Description>
       <section>

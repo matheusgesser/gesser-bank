@@ -72,7 +72,7 @@ export const Wrapper = styled.header`
   z-index: 10;
   transition: all 0.5s ease-in-out;
   user-select: none;
-  box-shadow: 0 3px 10px #00000008;
+  box-shadow: 0 3px 10px #00000010;
   &::before {
     content: '';
     position: absolute;

@@ -7,7 +7,7 @@ export const TextContent = styled.section`
   gap: 1.5rem;
   width: 80vw;
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 9rem;
   @media (max-width:700px) {
     width: 100%;
   }

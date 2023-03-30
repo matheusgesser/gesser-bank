@@ -57,6 +57,11 @@ export const Card = styled.section`
   justify-content: space-around;
   text-align: center;
   flex-wrap: wrap;
+  transition: all 300ms;
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #00000015;
+  }
   & svg {
     font-size: 2.5rem;
   }

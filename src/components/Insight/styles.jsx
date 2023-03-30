@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 12rem;
+  padding: 8rem 12rem;
   @media (max-width:1200px) {
     flex-direction: column;
     gap: 3rem;
@@ -14,7 +14,8 @@ export const Wrapper = styled.section`
 `
 
 export const VisualContent = styled.section`
-  width: 100%;
+  width: 40%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,10 +27,9 @@ export const VisualContent = styled.section`
 `
 
 export const BackImage = styled.img`
-  width: 50%;
+  width: 100%;
   filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.3));
   transition: all 800ms;
-  margin-left: 14rem;
     &:hover {
       transform: rotate(3deg);
     }
@@ -74,6 +74,7 @@ export const Comment = styled.aside`
 `
 
 export const TextContent = styled.section`
+  width: 50%;
   display: flex;
   flex-direction: column;
   & span {
@@ -105,6 +106,9 @@ export const TextContent = styled.section`
     gap: 4rem;
     margin: 1rem auto;
     align-items: center;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   }
   & > section svg {
     font-size: 2.5rem;
@@ -127,11 +131,11 @@ export const TextContent = styled.section`
     color: #ff0000;
   }
   & > section:first-of-type section:last-child h3::after {
-    content: '+';
+    content: 'K';
     color: #066306;
   }
   & > section:last-of-type section:first-child h3::after {
-    content: '+';
+    content: 'M';
     color: #e100ff;
   }
   & > section:last-of-type section:last-child h3::after {

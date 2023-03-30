@@ -11,7 +11,7 @@ import { BsLightbulbFill, BsShieldFillCheck } from 'react-icons/bs'
 export default function Product() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id='product'>
         <VisualContent>
           <BackImage src={ProductPic} loading='lazy' />
           <Card>

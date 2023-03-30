@@ -16,7 +16,7 @@ export default function Hero() {
         <Description>Here customers have access to detailed information about their financial activities, including account balances, transactions, and fees. Our robust security measures include multi-factor authentication, encryption, and regular monitoring to ensure that our customers' data is always protected.</Description>
       </TextContent>
       <VisualContent>
-        <MainPicture src={MainPic}></MainPicture>
+        <MainPicture id='mainpic' src={MainPic}></MainPicture>
         <Card>
           <h4>Business account</h4>
           <strong>R$54.698,00<GoTriangleUp /></strong>

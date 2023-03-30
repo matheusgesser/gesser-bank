@@ -17,35 +17,35 @@ export default function Insight() {
             impactful numbers</h2>
           <section>
             <Card>
-              <h3>99</h3>
+              <h3 id='cs'>0</h3>
               <p>Customer satisfaction</p>
             </Card>
             <Card>
-              <h3>100K</h3>
+              <h3 id='nupw'>0</h3>
               <p>New users per week</p>
             </Card>
           </section>
           <section>
             <Card>
-              <h3>205M</h3>
+              <h3 id='mau'>0</h3>
               <p>Monthly active users</p>
             </Card>
             <Card>
-              <h3>55</h3>
+              <h3 id='gyoy'>0</h3>
               <p>Growth year-over-year</p>
             </Card>
           </section>
         </TextContent>
         <VisualContent>
           <BackImage src={InsightPic} loading='lazy' />
-          <Comment style={{ left: '2vw', top: '40px' }}>
+          <Comment style={{ left: '-6vw', top: '40px' }}>
             <img src={PersonOnePic} loading='lazy' />
             <section>
               <strong>"Extremely secure"</strong>
               <p>Andy Smith - Investor & Trader</p>
             </section>
           </Comment>
-          <Comment style={{ left: '6vw', bottom: '40px' }}>
+          <Comment style={{ left: '-12vw', bottom: '40px' }}>
             <img src={PersonTwoPic} loading='lazy' />
             <section>
               <strong>"Gesser Bank is the best"</strong>

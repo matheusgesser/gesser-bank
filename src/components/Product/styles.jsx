@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: space-around;
   padding: 6rem 2rem 8rem 2rem;
-  background: #000;
+  background: #111;
   @media (max-width:1200px) {
     flex-direction: column;
     gap: 3rem;
@@ -50,6 +50,10 @@ export const Card = styled.section`
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: all 300ms;
+    &:hover {
+    transform: scale(1.05);
+  }
   }
   & section > svg {
     box-sizing: content-box;
@@ -58,9 +62,6 @@ export const Card = styled.section`
     color: #fff;
     font-size: 1.5rem;
     transition: all 300ms;
-  }
-  & svg:hover {
-    transform: scale(1.15);
   }
   & section:last-of-type > svg {
     color: #000;

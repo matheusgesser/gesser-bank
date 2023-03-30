@@ -25,7 +25,7 @@ export default function Blog() {
             <strong>Jun 16, 2022</strong>
             <h4>Management</h4>
             <p>How to save money - 8 simple ways
-              to start saving money every month</p>
+              to start saving money</p>
           </section>
         </Card>
         <Card>
@@ -34,7 +34,7 @@ export default function Blog() {
             <strong>Dec 24, 2022</strong>
             <h4>Finances</h4>
             <p>A guide to working remotely: How to
-              maximize productivity.</p>
+              maximize productivity</p>
           </section>
         </Card>
       </section>

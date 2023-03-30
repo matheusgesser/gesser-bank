@@ -55,7 +55,7 @@ export default function Footer() {
           </section>
         </section>
         <section>
-          <strong>© Gesser Bank 2023 | Made with ❤️ by Matheus</strong>
+          <strong>© Gesser Bank 2023 | Made with ❤️ by <a href="https://linktr.ee/matheusgesser" target={'_blank'}>Matheus Gesser</a></strong>
 
         </section>
       </Wrapper>
