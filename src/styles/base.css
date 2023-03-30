@@ -5,7 +5,7 @@
 #root {
   width: 100%;
   min-height: 100vh;
-  background: #F2F8FF95;
+  background: linear-gradient(135deg, #fff, #d3dcff, #fff);
 }
 
 .centered {
